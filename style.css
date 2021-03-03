@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Carter+One&family=Kalam:wght@300&family=Passion+One&family=Playfair+Display+SC:ital,wght@0,400;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main--container {
+  display: grid;
+  height: 100%;
+  width: 100vw;
+  grid-template-columns: 2fr 2fr 1fr;
+  grid-template-rows: 10vh 80vh 60vh;
+  background-color: rgba(20, 28, 37, 0.705);
+}
+
+.grid-nav {
+  display: grid;
+  grid-template-columns: 10fr 1fr;
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.nav {
+  grid-column: 1 / -1;
+}
+
+.circle {
+  background-image: url(https://images.unsplash.com/photo-1564852354452-2335f4c4815e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1055&q=80);
+  background-position: center;
+  background-size: cover;
+  height: 60px;
+  width: 60px;
+  grid-column: 2;
+  border-radius: 50%;
+  justify-self: center;
+  border-style: solid;
+
+  box-shadow: -7px 5px 38px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: -7px 5px 38px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: -7px 5px 38px rgba(0, 0, 0, 0.6);
+}
+.hero-container {
+  background-image: url(https://images.unsplash.com/photo-1503220317375-aaad61436b1b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80);
+  background-size: 100% 52vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: "Playfair Display SC", serif;
+  font-size: 27px;
+  grid-column: 1 / -1;
+  margin: 1em;
+
+  padding-top: 2em;
+  padding-left: 1.25em;
+
+  box-shadow: -1px 20px 60px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: -1px 20px 60px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: -1px 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+  color: rgba(236, 136, 105, 0.918);
+  padding-top: 1em;
+}
+
+.sub--titles {
+  color: white;
+  font-family: "Playfair Display SC", serif;
+  font-size: 25px;
+}
+
+.card--section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column: 1 / -1;
+  column-gap: 4em;
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+.card--one {
+  background-color: #263943;
+  font-size: 2em;
+  border-radius: 1em;
+  grid-column: 1;
+  grid-row: 1 / span 6;
+}
+
+.card--two {
+  background-color: #263943;
+  font-size: 2em;
+  border-radius: 1em;
+  grid-column: 2;
+  grid-row: 1 / span 6;
+}
+
+.sec--subtitle {
+  padding-left: 1em;
+}
+
+.pTag {
+  font-size: 20px;
+  padding-left: 2.5em;
+}
+
+.nav--choice {
+  font-family: "Playfair Display SC", serif;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style-type: none;
+
+  position: relative;
+}
+
+.nav--choice > li:hover {
+  color: white;
+}
